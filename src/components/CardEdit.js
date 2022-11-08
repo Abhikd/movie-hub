@@ -50,10 +50,10 @@ const CardEdit = ({movies, handleDone, handleCancel}) => {
        <input className='text-gray-400 ml-[-45px] border-2 border-black rounded' value={date} type="date"  onChange={handleDateChange} />
        </div>
        <div className="text-black mb-1">
-       <input className='border-2 border-black rounded' placeholder={vote} type="number" onChange={handleVoteChange} />
+       <input className='border-2 border-black rounded ml-[-92px]' min="1" max="10" placeholder={vote} type="number" onChange={handleVoteChange} />
        </div>
        <div className="text-black mb-1">
-       <input className='border-2 border-black rounded' placeholder={language} onChange={handleLanguageChange} />
+       <input className='border-2 border-black rounded' maxLength="3" type="text"  placeholder={language} onChange={handleLanguageChange} />
        </div>
        <div className='flex flex-row space-x-2'>
        <button className='text-white ml-[-2px] bg-red-500 px-2 py-1 rounded cursor-pointer mt-1' onClick={() => handleDone() } > Done </button>
