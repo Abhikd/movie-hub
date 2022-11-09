@@ -10,13 +10,13 @@ const Cards = ({ movies, handleEdit }) => {
   return (
     <div className='mt-5' >
    
-    <div className="p-4 bg-white w-[330px] h-[580px] rounded">
+    <div className="p-4 bg-white w-[330px] h-[580px] rounded hover:scale-105 duration-500">
     <img
         className="rounded w-[250px] ml-[24px]"
         src={getPosterURL(movies.poster_path)}
         alt={movies.adult}
     />
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center '>
         <h4 className="text-xl font-bold tracking-tight text-red-500 mb-1 mt-2">
         {movies.original_title}
         </h4>
